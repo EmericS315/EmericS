@@ -1,16 +1,16 @@
 ```mermaid
 flowchart TD
-    Start([Start]) --> Generate[("Pick a random number (1 to 100)")]
+    Start([Start]) --> Generate[("Pick a number (1 to 100)")]
     Generate --> Guess[("Ask for your guess")]
-    Guess --> Validate[("Check if the guess is valid")]
+    Guess --> Validate[("Check if valid")]
     
-    Validate -->|Valid| Compare[("See if the guess is correct")]
+    Validate -->|Valid| Compare[("Check if correct")]
     Validate -->|Invalid| Error[("Show error, ask again")]
     Error --> Guess
     
-    Compare -->|Correct| Win[("Show 'You got it! You win!'")]
-    Compare -->|Too High| High[("Show 'Too high! Try again.'")]
-    Compare -->|Too Low| Low[("Show 'Too low! Try again.'")]
+    Compare -->|Correct| Win[("You got it! You win!")]
+    Compare -->|Too High| High[("Too high! Try again.")]
+    Compare -->|Too Low| Low[("Too low! Try again.")]
     
     High --> Guess
     Low --> Guess
