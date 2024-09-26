@@ -15,3 +15,27 @@ flowchart TD
     High --> Guess
     Low --> Guess
     Win --> End([End])
+
+```
+
+
+
+
+
+
+
+
+
+
+
+Start: The game starts.
+Pick a number (1 to 100): The computer chooses a number between 1 and 100.
+Ask for your guess: The user is asked to enter their guess.
+Check if valid: The program checks if the input is a valid number.
+Valid: If it is valid, move to check the guess.
+Invalid: If not, show an error message and ask for a new guess.
+Check if correct: The program compares the guess with the random number.
+Correct: Show a message that they won.
+Too High: Inform the user that their guess was too high.
+Too Low: Inform the user that their guess was too low.
+End: The game ends.
