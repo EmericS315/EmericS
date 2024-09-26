@@ -1,3 +1,4 @@
+```mermaid
 flowchart TD
     Start([Start]) --> Generate[("Pick a random number (1 to 100)")]
     Generate --> Guess[("Ask for your guess")]
@@ -14,6 +15,7 @@ flowchart TD
     High --> Guess
     Low --> Guess
     Win --> End([End])
+
 
 Start: The game starts.
 Pick a random number (1 to 100): The computer chooses a number between 1 and 100.
